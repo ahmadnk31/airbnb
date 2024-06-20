@@ -1,4 +1,6 @@
 import Card from "./components/Card"
+import Footer from "./components/Footer"
+
 import Header from "./components/Header"
 import Navbar from "./components/Navbar"
 import { hotelData } from "./components/data"
@@ -8,8 +10,9 @@ const App = () => {
     <div className="">
       <Navbar />
       <Header />
-      <main>
-        <div className="container mx-auto grid grid-cols-3 gap-4">
+      <main className="container mx-auto max-sm:px-4 my-28 max-md:my-16 w-full">
+        <h1 className="text-3xl font-semibold text-balance mb-6">Popular Hotels</h1>
+        <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4">
           {hotelData.map((hotel) => (
             <Card
               key={hotel.title}
@@ -23,7 +26,9 @@ const App = () => {
             />
           ))}
         </div>
+        
       </main>
+      <Footer />
     </div>
   )
 }
