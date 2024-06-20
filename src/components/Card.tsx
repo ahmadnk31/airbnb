@@ -1,4 +1,4 @@
-import clsx from "clsx"
+
 type CardProps = {
     imgSrc: string;
     rating: number;
