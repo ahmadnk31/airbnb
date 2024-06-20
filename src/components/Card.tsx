@@ -14,8 +14,8 @@ const Card = ({imgSrc,rating,price,title,country,status,link}:CardProps) => {
     <a href={link} className="rounded overflow-hidden hover:border transition">
         <div className="relative">
             <img src={imgSrc} className="w-full h-64 object-cover" alt="" />
-            <div className="absolute top-2 right-2 bg-white p-2 rounded-md shadow-md">
-            <p className="text-sm text-balance font-semibold">{status&&status}</p>
+            <div className="absolute top-2 right-2 bg-white p-2 rounded shadow-md">
+            <p className="text-sm text-balance font-semibold">{status}</p>
             </div>
         </div>
         <div className="p-4">
